@@ -1,0 +1,209 @@
+
+/*--共通部分--*/
+html {
+    /*font-family: "Helvetica", "Century Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Sans-Serif;*/
+  /*  font-family:
+"Josefin Sans","YuGothic","游ゴシック","Hiragino Kaku Gothic ProN","Hiragino Sans","Meiryo","sans-serif";*/
+font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+    font-size: 62.5%;
+    height: 100%;
+}
+body {
+    line-height: 1.5;
+    height: 100%;
+    color: #273233;
+    font-size: 1.6rem;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*--- button-wrap ---*/
+.button-wrap{
+    display: flex;
+    &--row{
+        flex-direction: row;
+    }
+    &--column{
+        flex-direction: column;
+    }
+    &--center{
+        justify-content: center;
+    }
+}
+
+/*--- button ---*/
+.button{
+    margin: 2rem 1rem;
+    padding: 1.2rem 4rem;
+    background: #ccc;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    &--blue{
+        background: #9DBBE2;
+        color: #fff;
+    }
+    &--orange{
+        background: #F8B856;
+        color: #fff;
+    }
+    &--pink{
+        background: #FE657F;
+        color: #fff;
+    }
+    &--water-blue{
+        background: #00CCE1;
+        color: #fff;
+    }
+    &--black{
+        background: #273233;
+        color: #fff;
+    }
+}
+
+
+.marker.marker--blue{
+    background: linear-gradient(transparent 75%, #afe0e4 75%);
+}
+/*--- required ---*/
+.required{
+    color: #ff0000;
+
+}
+
+/*--- link ---*/
+.link{
+    color: #0066c0;
+    border-bottom: 1px solid #0066c0;
+}
+
+.open-modal{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  &::before{
+    content:"";
+    position:absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+  }
+}
+.modal{
+    overflow: hidden;
+    position: fixed;
+    z-index: 100001;
+    width: 500px;
+    height: 400px;
+    background: #fff;
+    padding: 4rem;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+
+    &__title{
+      font-size: 2.5rem;
+      margin-bottom:0.5rem;
+      font-weight: bold;
+
+    }
+}
+
+/*--- sub-contents ---*/
+.sub-contents{
+    padding: 4rem;
+    box-sizing: border-box;
+    max-width: 100rem;
+    width: 100%;
+    margin: 0 auto;
+
+    &__title{
+      text-align: center;
+      font-weight: bold;
+      font-size: 4rem;
+      margin-bottom: 4rem;
+      border-bottom: 1px #000 dotted;
+      margin: 0 auto 4rem;
+      width: 60rem;
+    }
+    &__title-eng{
+      opacity: 0.55;
+      color: #ccc;
+      font-size: 7rem;
+      font-family:"Josefin Sans","YuGothic","游ゴシック","Hiragino Kaku Gothic ProN","Hiragino Sans","Meiryo","sans-serif";
+    }
+    &__title-jp{
+        margin-top: -5.5rem;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    body {
+        font-size: 1.4rem;
+    }
+    /*--- button-wrap ---*/
+    .button-wrap{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    /*--- button ---*/
+    .button{
+        padding: 1.0rem 2rem;
+        margin: 0.5rem;
+        width: 100%;
+        max-width: 20rem;
+    }
+  /*--- contents ---*/
+  .sub-contents{
+        padding: 4rem 2rem;
+        &__title{
+            font-size: 2.4rem;   
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+        &__title-eng{
+            font-size: 4rem;
+        }
+        &__title-jp{
+            margin-top: -2.5rem;
+        }
+    }
+
+
+}
