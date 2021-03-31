@@ -94,7 +94,6 @@
     &__logo img {
         width: 113px;
     }
-
 }
 
 @media screen and (max-width:900px) {

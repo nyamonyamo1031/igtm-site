@@ -3,7 +3,7 @@
 <header class="header" id="header">
     <div class="header__inner">
         <div class="header__logo">
-            <NuxtLink to="/" class="header__nav-link">
+            <NuxtLink to="/" class=" header__nav-link">
             <img src="~/assets/image/header_logo_04.png" alt="logo" title="logo">
             </NuxtLink>
         </div>
@@ -31,24 +31,21 @@
                     <div class="header__sns">
                         <div class="header__sns-item">
                             <a href="https://twitter.com/c_nyamo" target="_blank">
-                                <font-awesome-icon :icon="['fab', 'twitter']" :class="['header__icon']" />
+                                <font-awesome-icon :icon="['fab', 'twitter']" :class="['header__icon']" ></font-awesome-icon>
                             </a>
                         </div>
                         <div class="header__sns-item">
                             <a href="https://github.com/nyamonyamo1031" target="_blank">
-                                <font-awesome-icon :icon="['fab', 'github']"  :class="['header__icon']" />
+                                <font-awesome-icon :icon="['fab', 'github']"  :class="['header__icon']" ></font-awesome-icon>
                             </a>
                         </div>
                     </div>
                     </li>
-
             </ul>
         </div>
     </div>
 </header>
-
 </template>
-
 <style lang="scss">
 
 .header{
