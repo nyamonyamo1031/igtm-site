@@ -4,9 +4,10 @@
                 <div class="main-visual__inner">
                     <div class="main-visual__message">
                         <h1 class="main-visual__tilte">Web技術で<br>ビジネス課題を解決</h1>
-                        <p>Webサイトの作成、デザインからコーディングまで<br>幅広くご対応させていただきます。<br>
-                            Web開発案件の対応も行っております。<br>
-                            あなたのビジネス課題を一緒に解決致します。</p>
+                        <p>
+                            Webサイトのデザインからコーディングまで<br>幅広くご対応させていただきます。<br>
+                            新規Webサイト作成から既存Webサイトを変えたいなど<br>のご要望にがあればお問い合わせください。
+                        </p>
                         <div class="button-wrap button-wrap--row">
                             <NuxtLink to="/portfolio" class="button button--black">
                                 ポートフォリオ
@@ -29,7 +30,7 @@
                 <div class="skill__messsasge">
                     これまでに業務を通じて経験した技術を紹介いたします。<br>
                     技術の進歩が激しい世界ですが常に技術のキャッチアップを行っています。<br>
-                    これらの技術を行使しビジネス課題を一緒に解決致します。
+                    これらの技術を行使し、Webサイト制作やweb開発を行います。
                 </div>
                 <div class="skill__list">
                     <div class="skill__list-item">
@@ -42,7 +43,7 @@
                     <div class="skill__list-item">
                         <div class="skill__count">SKILL <span>02</span></div>
                         <h3 class="skill__name ">CSS</h3>
-                        <p class="skill__description">HTMLに装飾を施すことができます。<br>
+                        <p class="skill__description">CSSはHTMLに装飾を施すことができる<br>
                             いいWebページには欠かせない存在です。<br>
                             0からコーディングはもちろん、SCSSの対応が可能で、最近はBEMによったCSSを記述しています。
                         </p>
@@ -80,13 +81,15 @@
                         <div class="top-contents__title-eng">ABOUT</div>
                         <div class="top-contents__title-jp">私について</div>
                     </h2>
-                    <p>私がこれまで経験した業務経験、現在の私についてです。</p>
+                    <p>私がこれまで経験した業務経験、仕事についてや今行っていること。</p>
                     <ul class="person__list">
                         <li class="person__list-item">Webサイト制作</li>
                         <li class="person__list-item">Webアプリケーション開発</li>
-                        <li class="person__list-item">デザイン</li>
+                        <li class="person__list-item">Webデザイン</li>
                         <li class="person__list-item">業界経験年数4年目</li>
                         <li class="person__list-item">新たなスキルアップのため日々勉強中</li>
+                        <li class="person__list-item">現在はJavaScriptの勉強を主に行っています。</li>
+                        <li class="person__list-item">年内に個人開発アプリ公開予定</li>
                         <li class="person__list-item">現在0歳児育児しながら夫婦でWeb制作&開発</li>
                     </ul>
                 </div>

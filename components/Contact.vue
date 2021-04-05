@@ -134,6 +134,10 @@ export default Vue.extend({
       this.modalViewFlag = true
     },
     contactModalStus:function(){
+      this.contactName= ""
+      this.contactMail= ""
+      this.contactText= ""
+      this.contactCheckbox= ""
       this.modalViewFlag = false
     },
     validateConfirmation:function(){
