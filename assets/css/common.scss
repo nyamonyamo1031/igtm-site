@@ -54,6 +54,11 @@ img{
     border: none;
     font-size: 1.4rem;
     cursor: pointer;
+    -webkit-transition:  all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition:  all 0.2s linear;
+    -o-transition:  all 0.2s linear;
+    transition: all 0.2s linear;
 
     &--blue{
         background: #9DBBE2;
@@ -74,6 +79,9 @@ img{
     &--black{
         background: #273233;
         color: #fff;
+    }
+    &:hover{
+        opacity: 0.7;
     }
 }
 
