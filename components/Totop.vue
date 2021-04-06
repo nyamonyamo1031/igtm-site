@@ -1,7 +1,7 @@
 <template>
     <div class="to-top">
         <nuxt-link v-scroll-to="'#header'" to> 
-            <font-awesome-icon :icon="['fas', 'angle-up']" />
+            <font-awesome-icon :icon="['fas', 'angle-up']"  ></font-awesome-icon>
         </nuxt-link>
     </div>
 </template>

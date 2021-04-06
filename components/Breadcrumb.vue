@@ -17,12 +17,6 @@
   &__list{
     display: flex;
   }
-  &__list-item{
-
-  }
-  &__list-item + .breadcrumb__list-item{
-
-  }
   &__list-item + .breadcrumb__list-item::before{
     content: ">";
     margin: 0 1rem;
@@ -43,14 +37,11 @@
 }
 </style>
 <script lang="ts">
-
 import Vue from 'vue'
 export default Vue.extend({
   props: {
     breadcrumb: String
-
-},
-  
+  },
 })
 </script>
 

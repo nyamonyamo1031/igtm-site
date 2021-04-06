@@ -247,8 +247,6 @@ export default Vue.extend({
       }
       return checkMailRegexpFlag
     }
-
-
   }
 })
 </script>
